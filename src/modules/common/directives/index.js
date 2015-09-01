@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports =
-    angular.module('expressly.common.directives', [])
-        .directive('exampleDirective', require('./example.directive'));
+    angular.module('upworktest.common.directives', [])
+        .directive('commonLayout', require('./layout.directive'));

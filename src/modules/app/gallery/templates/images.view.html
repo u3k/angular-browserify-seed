@@ -1,0 +1,15 @@
+<div layout="column" layout-fill>
+  <md-card class="card single">
+    <div class="md-card-image">
+        <img ng-src="{{image.thumbnailUrl}}" alt="{{image.title}}">
+    </div>
+    <md-card-content class="content" ng-bind="image.title"></md-card-content>
+    <div class="md-actions" layout="row" layout-align="end center"  ng-if="!album">
+      <a ui-sref="app.album({albumId: image.albumId})">
+        <md-button aria-label="album" class="md-icon-button">
+          <md-icon md-svg-icon="album"></md-icon>
+        </md-button>
+      </a>
+    </div>
+  </md-card>
+</div>

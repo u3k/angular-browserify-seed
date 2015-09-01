@@ -36,10 +36,13 @@
     "browser": {
         "angular": "./bower_components/angular/angular.min.js",
         "angular-route": "./bower_components/angular-route/angular-route.min.js",
+        "angular-ui-router": "./bower_components/angular-ui-router/release/angular-ui-router.min.js",
         "angular-animate": "./bower_components/angular-animate/angular-animate.min.js",
+        "angular-sanitize": "./bower_components/angular-sanitize/angular-sanitize.min.js",
         "angular-aria": "./bower_components/angular-aria/angular-aria.min.js",
         "angular-material": "./bower_components/angular-material/angular-material.min.js",
-        "angular-translate": "./bower_components/angular-translate/angular-translate.min.js"
+        "angular-translate": "./bower_components/angular-translate/angular-translate.min.js",
+        "infinite-scroll": "./bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js"
     },
     "browserify-shim": {}
 }

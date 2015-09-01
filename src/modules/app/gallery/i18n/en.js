@@ -5,6 +5,5 @@ module.exports = /*ngInject*/
         $translateProvider.translations('en', {
             HELLO: 'Hello {{value}}'
         });
-
         $translateProvider.preferredLanguage('en');
     };

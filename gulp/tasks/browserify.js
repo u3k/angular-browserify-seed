@@ -7,6 +7,7 @@ var browserifyShim = require('browserify-shim');
 
 module.exports = gulp.task('browserify', function () {
   return browserify({
+      debug: true,
       entries: [config.paths.src.modules]
     })
     .transform(browserifyShim)

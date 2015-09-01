@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html ng-app="expressly">
+<html ng-app="upworktest">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--bowerStyles-->
     <!--styles-->
 </head>
-<body>
-<div class="container" ng-view></div>
+<body layout="row" layout-vertical>
+  <div ui-view="header"></div>
+  <div ui-view="footer"></div>
+  <div common-layout></div>
 <!--scripts-->
 <!--config-->
 </body>

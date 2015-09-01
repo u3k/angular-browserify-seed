@@ -1,0 +1,26 @@
+<div layout="column" layout-fill class="cardlist">
+  <div infinite-scroll="items.getMoreItems()" infinite-scroll-distance="10" infinite-scroll-immediate-check="true">
+    <div layout="row" layout-wrap flex>
+      <div flex flex-sm="100" flex-md="50" flex-gt-md="33" ng-repeat="item in items.viewItems track by item.id">
+        <md-card class="card list">
+          <div class="md-card-image">
+            <a ng-if="album" ui-sref="app.albumImage({ imageId: item.id, albumId: item.albumId })">
+              <img ng-src="{{item.thumbnailUrl}}" alt="{{item.title}}">
+            </a>
+            <a ng-if="!album" ui-sref="app.image({ imageId: item.id})">
+              <img ng-src="{{item.thumbnailUrl}}" alt="{{item.title}}">
+            </a>
+          </div>
+          <md-card-content class="content" ng-bind="item.title"></md-card-content>
+          <div class="md-actions" layout="row" layout-align="end center"  ng-if="!album">
+            <a ui-sref="app.album({albumId: item.albumId})">
+            <md-button aria-label="album" class="md-icon-button">
+              <md-icon md-svg-icon="album"></md-icon>
+            </md-button>
+            </a>
+          </div>
+        </md-card>
+      </div>
+    </div>
+  </div>
+</div>

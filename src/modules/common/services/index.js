@@ -1,5 +1,8 @@
 'use strict';
 
 module.exports =
-    angular.module('expressly.common.services', [])
-        .factory('exampleService', require('./example.service'));
+    angular.module('upworktest.common.services', [])
+      .factory('albumRepository', require('./album.repository'))
+      .factory('imageRepository', require('./image.repository'))
+      .factory('ScrollDataSource', require('./scrollDataSource'))
+      .factory('layoutService', require('./layout.service'));

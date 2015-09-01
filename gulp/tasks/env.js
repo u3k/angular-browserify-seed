@@ -8,7 +8,7 @@ var ngConfig = require('gulp-ng-config');
 
 module.exports = gulp.task('env', function () {
     return gulp.src(config.paths.src.config)
-        .pipe(ngConfig('expressly.config', {
+        .pipe(ngConfig('upworktest.config', {
             environment: staging ? 'staging' : (release ? 'production' : 'development'),
             createModule: true
         }))

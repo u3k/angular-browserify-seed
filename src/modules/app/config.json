@@ -1,5 +1,50 @@
 {
-    "development": {},
-    "staging": {},
-    "production": {}
+    "development": {
+      "CONFIG": {
+        "api": {
+          "base": "http://jsonplaceholder.typicode.com",
+          "imagesAll": "/photos",
+          "imagesFromAlbum": "/albums/{{albumId}}/photos",
+          "image": "/photos/{{imageId}}",
+          "album": "/albums/{{albumId}}",
+          "albums": "/albums"
+        },
+        "links": {
+          "google": "https://google.com",
+          "github":  "https://github.com/u3k/angular-browserify-seed"
+        }
+      }
+    },
+    "staging": {
+      "CONFIG": {
+        "api": {
+          "base": "http://jsonplaceholder.typicode.com",
+          "imagesAll": "/photos",
+          "imagesFromAlbum": "/albums/{{albumId}}/photos",
+          "image": "/photos/{{imageId}}",
+          "album": "/albums/{{albumId}}",
+          "albums": "/albums"
+        },
+        "links": {
+          "google": "https://google.com",
+          "github":  "https://github.com/u3k/angular-browserify-seed"
+        }
+      }
+    },
+    "production": {
+      "CONFIG": {
+        "api": {
+          "base": "http://jsonplaceholder.typicode.com",
+          "imagesAll": "/photos",
+          "imagesFromAlbum": "/albums/{{albumId}}/photos",
+          "image": "/photos/{{imageId}}",
+          "album": "/albums/{{albumId}}",
+          "albums": "/albums"
+        },
+        "links": {
+          "google": "https://google.com",
+          "github":  "https://github.com/u3k/angular-browserify-seed"
+        }
+      }
+    }
 }

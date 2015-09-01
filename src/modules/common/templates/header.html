@@ -1,0 +1,31 @@
+<div class="toolbar header-toolbar hide-nav" ng-mouseenter="layoutService.setHover(true)" ng-mouseleave="layoutService.setHover(false)">
+  <div class="md-toolbar-tools"></div>
+</div>
+<md-fab-toolbar class="md-left"  ng-mouseenter="layoutService.setHover(true)" ng-mouseleave="layoutService.setHover(false)">
+  <md-fab-trigger class="align-with-text" ng-mouseenter="layoutService.nav()">
+    <md-button aria-label="menu" class="md-fab md-primary">
+      <md-icon md-svg-icon="menu"></md-icon>
+    </md-button>
+  </md-fab-trigger>
+
+  <md-toolbar>
+    <md-fab-actions class="md-toolbar-tools">
+      <a ng-href="{{links.google}}">
+        <md-button aria-label="google" class="md-icon-button">
+          <md-icon md-svg-icon="google"></md-icon>
+        </md-button>
+      </a>
+        <md-button aria-label="home" class="md-icon-button">
+          <md-icon md-svg-icon="home"></md-icon>
+        </md-button>
+    </md-fab-actions>
+  </md-toolbar>
+</md-fab-toolbar>
+<div class="backbutton hide-nav" ng-if="layoutService.backState" ng-mouseenter="layoutService.setHover(true)" ng-mouseleave="layoutService.setHover(false)">
+  <a ng-click="goBack();">
+    <md-button aria-label="arrow" class="md-icon-button">
+      <md-icon md-svg-icon="arrow" class="c-white"></md-icon>
+    </md-button>
+  </a>
+</div>
+
