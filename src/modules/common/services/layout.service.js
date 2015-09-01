@@ -40,7 +40,7 @@ module.exports = function ($window, $timeout) {
   };
 
   ls.initNav = function () {
-    ls.navigationTimeout = $timeout(ls.hideNavChecker, 4000);
+    ls.navigationTimeout = $timeout(ls.hideNavChecker, 10000);
   };
 
   ls.nav = function () {
