@@ -13,7 +13,7 @@ module.exports = /*ngInject*/
             $scope.layoutService = layoutService;
             $scope.goBack = function(){
               $state.go($scope.layoutService.backState.name,$scope.layoutService.backState.params);
-            }
+            };
           }
         },
         'layout@': {
@@ -110,8 +110,6 @@ module.exports = /*ngInject*/
         }
       }
     });
-
-
 
     $urlRouterProvider.otherwise('/');
 
